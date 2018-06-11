@@ -8,7 +8,7 @@ import {renderRoutes} from 'react-router-config'
 import routes from 'root/routes'
 
 export const Root = ({store}) => (
-  <Provider>
+  <Provider store={store}>
     <HashRouter>
       { renderRoutes(routes) }
     </HashRouter>
