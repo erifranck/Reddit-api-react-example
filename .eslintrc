@@ -4,7 +4,6 @@
     "react"
   ],
   "globals": {
-    "API_PATH_BASE": true,
-    "GA_TRACKER_CODE": true
+    "API_PATH_BASE": true
   }
 }
