@@ -1,0 +1,10 @@
+{
+  "extends": [ "standard", "standard-react" ],
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "API_PATH_BASE": true,
+    "GA_TRACKER_CODE": true
+  }
+}
