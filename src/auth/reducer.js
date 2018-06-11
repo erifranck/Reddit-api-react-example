@@ -7,7 +7,7 @@ const {Types, Creators} = createActions({
   requestWithDefaultValues: { username: 'guest', password: null },
   logout: null
   // you can create custom actioncreator like this
-  //custom: (a, b) => ({ type: 'CUSTOM', total: a + b })
+  // custom: (a, b) => ({ type: 'CUSTOM', total: a + b })
 })
 
 export const types = Types
