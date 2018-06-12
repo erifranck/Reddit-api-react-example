@@ -4,11 +4,11 @@
 ```yarn && yarn start ```
 
 ## The project structure:
-`rootOfProject`
-  |`package.json`
-  |`yarn.lock`
-  |`README.md`
-  |`public`
+`rootOfProject` \n
+  |`package.json` \n
+  |`yarn.lock` \n
+  |`README.md` \n
+  |`public` \n
     | `index.js`
     | `favicon.ico`
     | `manifest.json`
