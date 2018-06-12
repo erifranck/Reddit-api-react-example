@@ -26,7 +26,7 @@
 |   |   |   ├── [container-name].jsx
 |   |   |   └── index.jsx
 |   |   └── styles
-|   |       ├── [styles-for(component || container)].jsx
+|   |       ├── [styles-for(component || container)].js
 |   |       └── index.jsx
 |   ├── root
 |   |   ├── index.js
@@ -41,7 +41,7 @@
 |   |   |   ├── [container-name].jsx
 |   |   |   └── index.jsx
 |   |   └── styles
-|   |       ├── [styles-for(component || container)].jsx
+|   |       ├── [styles-for(component || container)].js
 |   |       └── index.jsx
 |   ├── main
 |   |   ├── index.js
@@ -55,7 +55,7 @@
 |   |   |   ├── [container-name].jsx
 |   |   |   └── index.jsx
 |   |   └── styles
-|   |       ├── [styles-for(component || container)].jsx
+|   |       ├── [styles-for(component || container)].js
 |   |       └── index.jsx
 |   └── [module-folder]
 |       ├── index.js
@@ -69,7 +69,7 @@
 |       |   ├── [container-name].jsx
 |       |   └── index.jsx
 |       └── styles
-|           ├── [styles-for(component || container)].jsx
+|           ├── [styles-for(component || container)].js
 |           └── index.jsx
 └── README.md
 ```
