@@ -1,7 +1,8 @@
 import React from 'react'
+import {Button} from 'common/styles'
 
 export const Home = () => (
   <div>
-    hola prototipo
+    <Button label='Login In' />
   </div>
 )
