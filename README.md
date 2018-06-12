@@ -71,8 +71,8 @@
 |       └── styles
 |           ├── [styles-for(component || container)].jsx
 |           └── index.jsx
-└── README.md ```
-
+└── README.md
+```
 
 ## WHY ?
 
