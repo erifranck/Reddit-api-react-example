@@ -8,33 +8,29 @@
 
 `rootOfProject`
 .
-├── package.json
-├── yarn.lock
-├── README.md
-├── public
-|   ├── index.js
-|   ├── favicon.ico
-|   └── manifest.json
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   └── 2009-04-26-barcamp-boston-4-roundup.textile
-├── _data
-|   └── members.yml
-├── _site
-└── index.html
++-- package.json
++-- yarn.lock
++-- README.md
++-- public
+|   +-- index.html
+|   +-- manifest.json
+|   +-- favicon.ico
++-- src
+|   +-- common
+|   |   +-- components
+|   |   |  +--`[styles-for(component || container)].js`
+|   +-- header.html
++-- _layouts
+|   +-- default.html
+|   +-- post.html
++-- _posts
+|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
+|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
++-- _data
+|   +-- members.yml
++-- _site
++-- index.html
 
-|`yarn.lock`
-|`README.md`
-|`public`
-| `index.js`
-| `favicon.ico`
-| `manifest.json`
 |`src`
 |`common`
 | `components`
