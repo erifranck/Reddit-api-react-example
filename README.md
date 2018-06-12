@@ -8,17 +8,17 @@
 
 `rootOfProject`
 .
-+-- package.json
-+-- yarn.lock
-+-- README.md
-+-- public
++-- _package.json
++-- _yarn.lock
++-- _README.md
++-- _public
 |   +-- index.html
 |   +-- manifest.json
 |   +-- favicon.ico
-+-- src
-|   +-- common
-|   |   +-- components
-|   |   |  +--`[styles-for(component || container)].js`
++-- _src
+|   +-- _common
+|   |   +-- _components
+|   |   |  +-- _[styles-for(component || container)].js
 |   +-- header.html
 +-- _layouts
 |   +-- default.html
@@ -31,10 +31,6 @@
 +-- _site
 +-- index.html
 
-|`src`
-|`common`
-| `components`
-| `[styles-for(component || container)].js`
 | `[component-name].jsx`
 | `index.js`
 | `containers`
