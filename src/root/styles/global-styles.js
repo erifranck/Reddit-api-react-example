@@ -1,4 +1,5 @@
 import { injectGlobal } from 'styled-components'
+import theme from './theme'
 
 /* eslint no-unused-expressions: 0 */
 injectGlobal`
@@ -6,7 +7,8 @@ injectGlobal`
   body {
     height: 100%;
     width: 100%;
-    background-color: rgb(245, 245, 245);
+    position: absolute;
+    background: ${theme.palette.white} );
   }
 
   body {
