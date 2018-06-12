@@ -6,96 +6,73 @@
 
 ## The project structure:
 
-`rootOfProject`
+```
 .
-+-- _package.json
-+-- _yarn.lock
-+-- _README.md
-+-- _public
-|   +-- index.html
-|   +-- manifest.json
-|   +-- favicon.ico
-+-- _src
-|   +-- _common
-|   |   +-- _components
-|   |   |  +-- _[styles-for(component || container)].js
-|   +-- header.html
-+-- _layouts
-|   +-- default.html
-|   +-- post.html
-+-- _posts
-|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
-+-- _data
-|   +-- members.yml
-+-- _site
-+-- index.html
+├── package.json
+├── yarn.lock
+├── .eslintrc
+├── .babelrc
+├── public
+|   ├── index.js
+|   ├── favicon.ico
+|   └── manifest.json
+├── src
+|   ├── common
+|   |   ├── index.js
+|   |   ├── components
+|   |   |   ├── [component-name].jsx
+|   |   |   └── index.jsx
+|   |   ├── containers
+|   |   |   ├── [container-name].jsx
+|   |   |   └── index.jsx
+|   |   └── styles
+|   |       ├── [styles-for(component || container)].jsx
+|   |       └── index.jsx
+|   ├── root
+|   |   ├── index.js
+|   |   ├── routes.js
+|   |   ├── reducer.js
+|   |   ├── store.js
+|   |   ├── saga.js
+|   |   ├── components
+|   |   |   ├── [component-name].jsx
+|   |   |   └── index.jsx
+|   |   ├── containers
+|   |   |   ├── [container-name].jsx
+|   |   |   └── index.jsx
+|   |   └── styles
+|   |       ├── [styles-for(component || container)].jsx
+|   |       └── index.jsx
+|   ├── main
+|   |   ├── index.js
+|   |   ├── routes.js
+|   |   ├── reducer.js
+|   |   ├── saga.js
+|   |   ├── components
+|   |   |   ├── [component-name].jsx
+|   |   |   └── index.jsx
+|   |   ├── containers
+|   |   |   ├── [container-name].jsx
+|   |   |   └── index.jsx
+|   |   └── styles
+|   |       ├── [styles-for(component || container)].jsx
+|   |       └── index.jsx
+|   └── [module-folder]
+|       ├── index.js
+|       ├── reducer.js
+|       ├── saga.js
+|       ├── routes.js
+|       ├── components
+|       |   ├── [component-name].jsx
+|       |   └── index.jsx
+|       ├── containers
+|       |   ├── [container-name].jsx
+|       |   └── index.jsx
+|       └── styles
+|           ├── [styles-for(component || container)].jsx
+|           └── index.jsx
+└── README.md ```
 
-| `[component-name].jsx`
-| `index.js`
-| `containers`
-| `[styles-for(component || container)].js`
-| `[container-name].jsx`
-| `index.js`
-| `styles`
-| `[styles-for(component || container)].js`
-| `index.js`
-| `index.js`
-|`main`
-| `components`
-| `[component-name].jsx`
-| `index.js`
-| `containers`
-| `[container-name].jsx`
-| `index.js`
-| `styles`
-| `[styles-for(component || container)].js`
-| `index.js`
-| `index.js`
-|`root`
-| `components`
-| `[component-name].jsx`
-| `index.js`
-| `containers`
-| `[container-name].jsx`
-| `index.js`
-| `styles`
-| `[styles-for(component || container)].js`
-| `index.js`
-| `index.js`
-|`auth`
-| `components`
-| `[component-name].jsx`
-| `index.js`
-| `containers`
-| `[container-name].jsx`
-| `index.js`
-| `styles`
-| `[styles-for(component || container)].js`
-| `index.js`
-| `index.js`
-|`users`
-| `components`
-| `[component-name].jsx`
-| `index.js`
-| `containers`
-| `[container-name].jsx`
-| `index.js`
-| `styles`
-| `[styles-for(component || container)].js`
-| `index.js`
-| `index.js`
-|`products`
-| `components`
-| `[component-name].jsx`
-| `index.js`
-| `containers`
-| `[container-name].jsx`
-| `index.js`
-| `styles`
-| `[styles-for(component || container)].js`
-| `index.js`
-| `index.js`
 
 ## WHY ?
 
