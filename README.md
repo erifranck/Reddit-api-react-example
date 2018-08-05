@@ -1,4 +1,4 @@
-# Providers frontend project
+# Reddit frontend project
 
 ## run the project with:
 ```yarn && yarn start ```
