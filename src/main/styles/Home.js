@@ -8,4 +8,8 @@ export const Home = styled(HomeComponent)`
   .wrapper {
     height: 400px;
   }
+  & img {
+    max-height: 800px;
+    max-width: 100%;
+  }
 `
