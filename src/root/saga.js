@@ -1,13 +1,14 @@
 import {takeLatest} from 'redux-saga/effects'
 import {
-  get as getCategories
+  getSubreddit
 } from 'categories/saga'
+
 import {
   types
 } from 'categories/reducer'
 
 function * saga() {
-  yield takeLatest(types.GET_CATEGORIES, getCategories)
+  yield takeLatest(types.GET_SUBREDDIT, getSubreddit)
 }
 
 export default saga
