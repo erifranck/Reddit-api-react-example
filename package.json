@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apisauce": "^0.16.0",
     "formik": "^0.11.11",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
@@ -12,6 +13,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
+    "redux-persist": "^5.10.0",
     "redux-saga": "^0.16.0",
     "reduxsauce": "^1.0.0",
     "styled-components": "^3.3.2"
