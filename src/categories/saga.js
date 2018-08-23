@@ -3,7 +3,14 @@ import api from 'categories/api'
 import actions from 'categories/reducer'
 
 export function * getSubreddit(action) {
-  yield put(actions.getSubreddit(action.subreddit))
+  yield put(actions.startCategoryFetch())
+  const response = yield call(api.getSubreddis, action.subreddit)
+  if(response.status === 200) {
+    yield put(actions.getSubredditSuccess(response.data))
+  }
+  else {
+    yield put(actions.failCategoryResponse(response.error))
+  }
 
 }
 
