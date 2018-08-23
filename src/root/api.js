@@ -1,7 +1,12 @@
 import {create} from 'apisauce'
 
-export const api = create({
-  baseURL: 'https://www.reddit.com/api/v1/',
-  headers: {
+class Api {
+  constructor(config) {
+    this.service = create({
+      baseURL: config.baseURL,
+      headers: config.headers
+    })
   }
-})
+}
+
+export default Api
