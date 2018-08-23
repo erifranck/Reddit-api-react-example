@@ -1,9 +1,12 @@
 import RootApi from 'root/api'
 
-const Api = new RootApi({baseURL: 'https://old.reddit.com/'})
-class CategoryApi extends Api {
+class CategoryApi extends RootApi {
+  constructor(conf) {
+    super(conf)
+  }
   getSubreddis(reddit) {
     this.service(`r/${reddit}.json`)
   }
-
 }
+
+export default new CategoryApi({baseURL: 'https://old.reddit.com/'})

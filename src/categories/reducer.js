@@ -1,26 +1,32 @@
 import {createActions, createReducer} from 'reduxsauce'
 
 const {Types, Creators} = createActions({
-  getCategories: null,
-  getCategoriesSuccess: ['response'],
-  getCategoriesFail: ['response']
+  getSubreddit: ['subreddit'],
+  getSubredditSuccess: ['response'],
+  failCategoryResponse: ['response']
 })
 
 export const types = Types
 export default Creators
 
 const INITIAL_VALUES = {
-  token: '',
-  logged: false
+  logged: false,
+  subreddit: null
 }
 
-const setCategories = (state, action) => ({
+const setSubreddit = (state, action) => ({
   ...state,
-  data: action.response.data
+  subreddits: 'done'
+})
+
+const failResponse = (state, action) => ({
+  ...state,
+  err: action.err
 })
 
 const HANDLERS = {
-  [Types.GET_CATEGORIES_SUCCESS]: setCategories
+  [Types.GET_SUBREDDIT_SUCCESS]: setSubreddit,
+  [Types.FAIL_CATEGORY_RESPONSE]: failResponse
 }
 
 export const reducer = createReducer(INITIAL_VALUES, HANDLERS)
