@@ -3,7 +3,8 @@ const colorpalette = {
   red: '#931621',
   sky: '#2274A5',
   yellow: '#FFC70E',
-  white: '#E0E4EE',
+  white: '#ffffff',
+  grey: '#EEEEEE',
   charcoal: '#061426'
 
 }

@@ -31,6 +31,7 @@ injectGlobal`
   }
   body {
     line-height: 1;
+    background-color: ${theme.palette.grey}
   }
   ol, ul {
     list-style: none;
