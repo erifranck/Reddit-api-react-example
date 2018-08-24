@@ -1,22 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {NavBar} from 'common/styles'
 
 export const Header = (props) => (
   <div className={props.className}>
     <div className='header-title'>
-      <h3>
-        Reddit Example
-      </h3>
+      <h1 className='title'>
+        {props.title}
+      </h1>
     </div>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Categories</li>
-      </ul>
-    </nav>
+    <div className="nav-bar">
+      <NavBar links={[
+        {label: 'Archivo', href: '#', active: true},
+        {label: 'Nuevo', href: '#'},
+        {label: 'Subiendo', href: '#'},
+        {label: 'Polemico', href: '#'},
+        {label: 'Popular', href: '#'},
+        {label: 'Con Gold', href: '#'},
+        {label: 'Wiki', href: '#'}
+      ]} />
+    </div>
   </div>
 )
 
 Header.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  title: PropTypes.string
 }
