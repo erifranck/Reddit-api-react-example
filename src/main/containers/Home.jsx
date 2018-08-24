@@ -4,25 +4,25 @@ import {Button, Header} from 'common/styles'
 import Background from 'main/images/bg.png'
 
 export class Home extends Component {
-  componentDidMount() {
-    this.props.getSubreddit('overwatch')
+  constructor () {
+    super()
+    this.state = {
+      reddit: 'overwatch'
+    }
+  }
+  componentDidMount () {
+    this.props.getSubreddit(this.state.reddit)
   }
   render () {
-    console.log(this.props.subreddits)
     return (
       <React.Fragment>
-        <Header />
-        <div className={this.props.className}>
-          <div>
-            <img src={Background} alt='' />
-          </div>
-          <Button label='Login In' />
-        </div>
+        <Header title={this.state.reddit}/>
       </React.Fragment>
     )
   }
 }
 
 Home.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  getSubreddit: PropTypes.func
 }
