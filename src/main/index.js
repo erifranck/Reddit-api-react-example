@@ -6,7 +6,7 @@ import actions from 'categories/reducer'
 export const AppPage = App
 export const HomePage = connect(
   (state) => ( {
-    subreddits: state.categories.subreddits
+    subreddits: state.categories.subreddits ? state.categories.subreddits.data.children : []
   }),
   {
     getSubreddit: actions.getSubreddit
