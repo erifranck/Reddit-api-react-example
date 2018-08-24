@@ -6,7 +6,7 @@ import cn from 'classnames'
 export const NavBar = (props) => (
   <div className={props.className}>
     <nav>
-      <img src="/reddit-logo-icon-13.png" alt="" />
+      <img src="/reddit.png" alt="" />
       <ul>
         {
           props.links.map(( item, index ) => (
