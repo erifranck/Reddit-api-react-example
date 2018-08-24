@@ -62,6 +62,18 @@ export const Box = styled(BoxComponent)`
   }
   .content {
     padding: 0px 10px;
+    h5 {
+      a {
+        color: ${({theme}) => theme.palette.aqua}
+        text-decoration: none;
+      }
+    }
+    p {
+      a {
+        color: ${({theme}) => theme.palette.charcoal}
+        text-decoration: none;
+      }
+    }
     span {
       font-size: 14px;
     }

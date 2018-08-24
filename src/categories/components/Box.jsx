@@ -14,14 +14,22 @@ export const Box = (props) => (
       {
         props.withBgImage ?
           <a href={props.url} className='bg-render' /> :
-          <a href={ props.url }>
+          <a href={props.url}>
             <img src={props.image} alt='' />
           </a>
       }
     </div>
     <div className='content'>
-      <h5> {props.title}</h5>
-      <p>{props.description}</p>
+      <h5>
+        <a href={props.url}>
+          {props.title}
+        </a>
+      </h5>
+      <p>
+        <a href={props.url}>
+          {props.description}
+        </a>
+      </p>
       <span>Publicado por { props.author }</span>
     </div>
   </div>
