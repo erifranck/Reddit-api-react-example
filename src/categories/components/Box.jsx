@@ -4,14 +4,20 @@ import PropTypes from 'prop-types'
 export const Box = (props) => (
   <div className={props.className}>
     <div className='votes-container'>
-      <span className='up-arrow' />
+      <span className='arrow-up' />
       <p className='votes'>
         {props.votes}
       </p>
-      <span className='down-arrow' />
+      <span className='arrow-down' />
     </div>
     <div className='image-container'>
-      <img src={props.image} alt='' />
+      {
+        props.withBgImage ?
+          <a href={props.url} className='bg-render' /> :
+          <a href={ props.url }>
+            <img src={props.image} alt='' />
+          </a>
+      }
     </div>
     <div className='content'>
       <h5> {props.title}</h5>
@@ -29,5 +35,6 @@ Box.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   url: PropTypes.string,
-  votes: PropTypes.number
+  votes: PropTypes.number,
+  withBgImage: PropTypes.bool
 }

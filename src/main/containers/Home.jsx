@@ -37,6 +37,7 @@ export class Home extends Component {
                         title={data.title}
                         votes={data.ups}
                         image='//a.thumbs.redditmedia.com/dYcU_yJojWtlHVUaRsYQdC3bY7wTQ4pnvcxsRZtedP4.png'
+                        withBgImage
                       />
                     ))
                   }
