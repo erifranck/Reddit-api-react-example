@@ -3,15 +3,21 @@ import PropTypes from 'prop-types'
 
 export const Box = (props) => (
   <div className={props.className}>
-    <div>
-      {props.votes}
+    <div className='votes-container'>
+      <span className='up-arrow' />
+      <p className='votes'>
+        {props.votes}
+      </p>
+      <span className='down-arrow' />
     </div>
-    <div>
+    <div className='image-container'>
       <img src={props.image} alt='' />
     </div>
-    <h3> {props.title}</h3>
-    <p>{props.description}</p>
-    <span>{ props.author }</span>
+    <div className='content'>
+      <h5> {props.title}</h5>
+      <p>{props.description}</p>
+      <span>Publicado por { props.author }</span>
+    </div>
   </div>
 )
 
@@ -23,5 +29,5 @@ Box.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   url: PropTypes.string,
-  votes: PropTypes.string
+  votes: PropTypes.number
 }
